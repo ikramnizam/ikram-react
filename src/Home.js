@@ -1,15 +1,15 @@
-import { useState } from "react";
-
+import{useState} from 'react';
 
 const Home = () => {
-    // let Name = 'mario';
-    // const [name, setName] = useState('alip');
-    //  const[age, setAge] = useState(20);
+    // let name = 'mario';
+    const [name, setName] = useState('alip');
+     const[age, setAge] = useState(20);
+   
 
-    // const handleClick1 = () => {
-    //     setName('cappp');
-    //     setAge(40);
-    // }
+    const handleClick1 = () => {
+        setName ('Luigi');
+        setAge(30)
+    }
 
     // const handleClick2 = (name) => {
     //     console.log('jfnvkjdfnvkjdfnvjefnv' + name);
@@ -23,18 +23,9 @@ const Home = () => {
     
     return ( 
         <div className="home">
-            {/* <h2>Homepage</h2>
+            <h2>Homepage</h2>
             <p>{name} is {age} years old</p>
-            <button onClick={handleClick1}>Click Me</button> */}
-            {/* <button onClick={() => handleClick2(' mairo')}>Click Me AGAINNNNN</button> */}
-
-            {/* {blogs.map((blog) => (
-                <div className="blog-preview" key={blog.id}>
-                    <h2>{blog.title}</h2>
-                    <p>Written by{blog.author}</p>
-                </div>
-            ))} */}
-            
+            <button onClick={handleClick1}>Click me</button>
         </div>
      );
 }
